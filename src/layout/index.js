@@ -11,7 +11,7 @@ function Layout() {
             <Router>
                 <Routes>
                     <Route path="/" element={<BookList />} />
-                    <Route element={<NotFound />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>
         </>
